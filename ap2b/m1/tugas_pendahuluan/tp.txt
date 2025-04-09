@@ -1,0 +1,7 @@
+Mata Praktikum : Algoritma dan Pemrogramman 2B
+Materi : Konsep thread dan multi-thread pada python
+PJ : Yoga Ardiansyah
+
+1. Apa itu GIL pada python? jelaskan secara singkat mengenai GIL!
+2. Apakah ada solusi untuk permasalahan dari race condition di python?
+3. Jika dengan GIL menurut pendapat kamu apakah Multi Threading menjadi tidak berguna?
