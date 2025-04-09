@@ -1,0 +1,8 @@
+Mata Praktikum : Algoritma dan Pemrogramman 2B
+Materi : Konsep thread dan multi-thread pada python
+PJ : Yoga Ardiansyah
+
+1. Jelaskan secara singkat apa itu concurrency !
+2. Jelaskan secara singkat apa itu threading !
+3. Jelaskan alasan diperlukannya multi threading !
+4. Apa itu Race Condition dan Deadlock? jelaskan pengertian keduanya !
