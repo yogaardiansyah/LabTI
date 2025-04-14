@@ -1,0 +1,8 @@
+Mata Praktikum : Algoritma dan Pemrogramman 2B
+Materi : Konsep dasar API dan JSON
+PJ : Yoga Ardiansyah
+
+1. Apa itu API? Jelaskan !
+2. Jelaskan secara singkat jenis API!
+3. Sebutkan arsitektur-arsitektur API!
+4. apa itu JSON? dan berikan contoh json sederhana!
