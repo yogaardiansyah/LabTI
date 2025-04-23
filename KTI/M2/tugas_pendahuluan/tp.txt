@@ -1,0 +1,5 @@
+1. Mengapa Spreadsheet secara umum diperlukan?
+
+2. Berkaitan sebagai Developer apa keuntungan memahami formula Spreadsheet dalam programming?
+
+3. Dari konsep Formula berkaitan dengan komputasi coba berikan contoh projek singkat dari penerapan hal tersebut?

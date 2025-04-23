@@ -1,0 +1,7 @@
+1. Jelaskan apa itu formula !
+
+2. Jelaskan apa itu Spreadhseet dan sebutkan contohnya !
+
+3. Sebutkan operator operator yang dapat digunakan pada formula !
+
+4. Sebutkan contoh formula dasar Spreadsheet !
