@@ -1,0 +1,8 @@
+Mata Praktikum : Algoritma dan Pemrogramman 2B
+Materi : Konsep thread dan multi-thread pada python
+PJ : Yoga Ardiansyah
+
+1. Jelaskan secara singkat apa itu Framework !
+2. Jelaskan secara tipe tipe framework!
+3. Jelaskan mengapa diperlukannya framework !
+4. Jelaskan kekurangan dari adanya framwork !
