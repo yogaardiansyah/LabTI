@@ -1,0 +1,7 @@
+1. Jelaskan apa itu Mail Merge !
+
+2. Mengapa mail merge dibuat?, jelaskan alasan awal dibentuknya mail merge !
+
+3. Sebutkan aplikasi aplikasi yang dapat mendukung fungsi mail merge !
+
+4. Sebutkan sumber data yang dapat dijadikan mail merge dan berikan contohnya !
