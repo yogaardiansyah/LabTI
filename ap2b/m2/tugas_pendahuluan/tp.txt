@@ -1,0 +1,7 @@
+Mata Praktikum : Algoritma dan Pemrogramman 2B
+Materi : Konsep dasar API dan JSON
+PJ : Yoga Ardiansyah
+
+1. apa saja tipe data yang bisa langsung disimpan di JSON, sebutkan !
+2. Sebutkan best-practice dari endpoint API, buatkan contoh best practicenya!
+3. Sebutkan method-method yang ada dalam http yang kaitannya dengan REST API!
