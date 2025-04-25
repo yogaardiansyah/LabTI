@@ -1,0 +1,5 @@
+1. Sebutkan keuntungan penggunaan database!
+
+2. Sebutkan projek apa saja yang dapat menggunakan RDBMS dan NonRDBMS!
+
+3. Uraikan Hirarki data dari terbesar hingga terkecil!

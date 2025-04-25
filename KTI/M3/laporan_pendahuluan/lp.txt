@@ -1,0 +1,8 @@
+1. jelaskan secara singkat  apa itu microsoft access!
+
+2. Jelaskan secara singkat apa itu basis data!
+
+3. Jelaskan perbedaan RDBMS dan NonRDBMS!
+
+4. Jelaskan pengertian hirarki data, dan sebutkan urutan hirarki data dari terbesar hingga terkecil!
+ 
