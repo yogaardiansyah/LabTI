@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Mahasiswa</title>
+</head>
+<body>
+    <h1>Update Mahasiswa</h1>
+    <form method="POST">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" value="{{ mahasiswa.nama }}" required><br><br>
+        
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" value="{{ mahasiswa.nim }}" required><br><br>
+        
+        <input type="submit" value="Update Mahasiswa">
+    </form>
+    <br>
+    <a href="{{ url_for('mahasiswa_index') }}">Kembali ke Daftar Mahasiswa</a>
+</body>
+</html>

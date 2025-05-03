@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Selamat datang, {{ user }}!</h1>
+    <h2>Total Mahasiswa: {{ total_mahasiswa }}</h2>
+
+    <h3>Daftar Mahasiswa</h3>
+    <ul>
+        {% for mhs in mahasiswa %}
+            <li>{{ mhs.nama }} (NIM: {{ mhs.nim }})</li>
+        {% endfor %}
+    </ul>
+
+    <br>
+    <a href="{{ url_for('mahasiswa_index') }}">Kelola Mahasiswa</a>
+    <br>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

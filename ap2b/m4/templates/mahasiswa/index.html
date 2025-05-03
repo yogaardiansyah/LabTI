@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Mahasiswa</title>
+</head>
+<body>
+    <h1>Daftar Mahasiswa</h1>
+    <ul>
+        {% for mhs in mahasiswa %}
+            <li>{{ mhs.nama }} (NIM: {{ mhs.nim }}) 
+                <a href="{{ url_for('update_mahasiswa', index=loop.index0) }}">Update</a> | 
+                <a href="{{ url_for('delete_mahasiswa', index=loop.index0) }}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_mahasiswa') }}">Tambah Mahasiswa</a>
+    <br>
+    <a href="{{ url_for('dashboard') }}">Kembali ke Dashboard</a>
+</body>
+</html>
