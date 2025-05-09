@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistem Akademik</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Sistem Informasi Akademik</h1>
+    </header>
+
+    <nav class="app-nav">
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a href="{{ url_for('mahasiswa_index') }}">Data Mahasiswa</a>
+        <a href="{{ url_for('logout') }}">Logout ({{ session.username }})</a>
+    </nav>
+
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <h1 class="page-title">Dashboard</h1>
+        <h2>Selamat datang, {{ user }}!</h2>
+        <p>Ini adalah halaman dashboard utama sistem informasi akademik.</p>
+        
+        <h3>Ringkasan Data:</h3>
+        <ul>
+            <li>Total Mahasiswa Terdaftar: <strong>{{ total_mahasiswa }}</strong></li>
+        </ul>
+        <p>
+            <a href="{{ url_for('mahasiswa_index') }}" class="btn">Kelola Data Mahasiswa</a>
+        </p>
+    </div>
+
+    <footer class="app-footer">
+        <p>© {{ g.year if g and g.year else '2024' }} My Simple Flask App</p>
+    </footer>
+</body>
+</html>
