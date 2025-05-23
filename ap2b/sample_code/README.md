@@ -16,6 +16,7 @@ Membangun backend API sederhana untuk layanan top-up game yang aman dan scalable
 - Thunder Client (Opsional)
 
 # 🗃️ 2. Struktur Proyek
+<pre>```
 root/
 ├── app/
 │   ├── __init__.py
@@ -31,6 +32,7 @@ root/
 ├── api_spec.yaml
 └── README.md
 └── .gitignore  
+```</pre>
 
 # 3. Cara Installalasi
 ```bash
@@ -58,6 +60,7 @@ python run.py
 ```
 
 # 5. Penjelasan File
+<pre>```
 root/
 ├── app/                 # Folder utama aplikasi (modul utama)
 │   ├── __init__.py      # Inisialisasi package Python & konfigurasi Flask 
@@ -72,3 +75,4 @@ root/
 ├── README.md            # Dokumentasi proyek
 ├── test.py              # File untuk testing aplikasi
 └── client.py            # Client untuk mengakses API
+```</pre>
