@@ -1,0 +1,137 @@
+openapi: 3.0.0
+info:
+  title: Game Top-Up API
+  version: 1.0.0
+paths:
+  /topup:
+    get:
+      summary: Get all topup data
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    user:
+                      type: string
+                    amount:
+                      type: number
+    post:
+      summary: Add topup data
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - user
+                - amount
+              properties:
+                user:
+                  type: string
+                amount:
+                  type: number
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  data:
+                    type: object
+                    properties:
+                      user:
+                        type: string
+                      amount:
+                        type: number
+
+  /topup/{id}:
+    parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+    put:
+      summary: Update topup data
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - user
+                - amount
+              properties:
+                user:
+                  type: string
+                amount:
+                  type: number
+      responses:
+        '200':
+          description: Updated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  data:
+                    type: object
+                    properties:
+                      user:
+                        type: string
+                      amount:
+                        type: number
+        '400':
+          description: Bad Request (data tidak lengkap)
+        '404':
+          description: Not Found (data tidak ditemukan)
+
+    delete:
+      summary: Delete topup data
+      responses:
+        '200':
+          description: Deleted
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  data_terhapus:
+                    type: object
+                    properties:
+                      user:
+                        type: string
+                      amount:
+                        type: number
+        '404':
+          description: Not Found (data tidak ditemukan)
+
+  /health:
+    get:
+      summary: Health check endpoint
+      responses:
+        '200':
+          description: Service status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: sehat
